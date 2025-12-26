@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #030303;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #030303;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: all 3s ease-in-out;
+}
+
+@layer {
+  .container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-gap {
+    @apply py-10 md:py-20;
+  }
+}
+
+/* Start Custom Css */
+#border_btn {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background:
+    linear-gradient(#303030e6, #303030dd) padding-box,
+    linear-gradient(148deg,
+      #dd4292,
+      #ae64fc,
+      #0234fe,
+      #2cd4f8,
+      #dd4292) border-box;
+  background-size: 100% 100%, 300% 300%;
+  animation: gradientMove 4s linear infinite;
+  color: white;
+  cursor: pointer;
+}
+
+#border_animation {
+  border: 2px solid transparent;
+  border-radius: 30px;
+  /* padding: 10px 20px; */
+  background:
+    linear-gradient(148deg,
+      #2cd3f80f,
+      #000000ad,
+      #000,
+      #000,
+      #00000000,
+      #00000000,
+      #dd42927e) padding-box,
+
+    linear-gradient(148deg,
+      #2cd3f8b7,
+      #000,
+      #dd4292,
+      #dd4292b8,
+      #dd429277,
+      #dd42927e) border-box;
+  background-size: 100% 100%, 300% 300%;
+  /* animation: gradientMove 4s linear infinite; */
+}
+
+#border_btn_white {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(148deg,
+      #dd4292,
+      #ae64fc,
+      #0234fe,
+      #2cd4f8,
+      #dd4292) border-box;
+  background-size: 100% 100%, 300% 300%;
+  animation: gradientMove 4s linear infinite;
+  color: black;
+  cursor: pointer;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%, 0% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%, 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%, 0% 50%;
+  }
+}
+
+.gradient-text {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* hover */
+.gradient-text:hover {
+  background: linear-gradient(90deg,
+      #dd4292,
+      #ae64fc,
+      #2cd4f8,
+      #dd4292);
+  background-size: 300% 300%;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textGradientMove 2s linear infinite;
+}
+
+/* animation */
+@keyframes textGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+.gradient-text-color {
+  background: linear-gradient(90deg, #dd4292, #ae64fc 29.27%, #2cd4f8 62.94%);
+  text-align: center;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* End Custom Css */
+
+.gradient-line {
+  background: linear-gradient(90deg, #dd4292, #ae64fc 29.27%, #2cd4f8 62.94%);
+  border-radius: 9999px;
+}
+
+/* Line animation */
+@keyframes lineGrow {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  50% {
+    width: 2rem;
+    opacity: 1;
+  }
+
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.animate-line {
+  animation: lineGrow 2s ease-out infinite;
+}
+
+
+.line-animate {
+  position: absolute;
+  background: linear-gradient(90deg, #dd42925f, #ad64fc57 29.27%, #2cd3f86c 62.94%);
+  width: 100%;
+  height: 3px;
+  border-radius: 40px;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  z-index: 10000;
+}
+
+@keyframes lineMove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.parent-line-animate:hover .line-animate {
+  animation: lineMove 3s ease-out infinite;
+}
+
+.first-char::first-letter {
+  font-size: 4rem;
+  margin-right: 3px;
+  line-height: 1;
+  font-weight: bold;
+  background: linear-gradient(90deg, #dd4292, #ae64fc 29.27%, #2cd4f8 62.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  color: #dd4292;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

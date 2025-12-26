@@ -1,0 +1,7 @@
+logo loop
+
+Circular Gallery
+
+stack
+
+✅ Dome Gallery ==> image slider in zedny

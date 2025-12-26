@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model PowerFeatures {
+  id       Int    @id @default(autoincrement())
+  imageUrl String
+  title    String
+  desc     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Team {
+  id        Int      @id @default(autoincrement())
+  src       String
+  name      String
+  position  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
