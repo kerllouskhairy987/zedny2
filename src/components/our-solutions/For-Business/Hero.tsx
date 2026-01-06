@@ -9,10 +9,10 @@ const Hero = () => {
                     <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                         <TextType text={[`Unleashing Success`, `Unleashing Success`]} typingSpeed={100} />
                     </h1>
-                    <p className="mb-1 text-xl text-white/60">Zedny&apos;s Creative Solutions for Business Empowerment</p>
-                    <p className="text-white/60">In today&apos;s fast-paced business world, staying competitive and achieving growth are top priorities. Innovative solutions are tailored to meet the unique needs of businesses and corporations. With a focus on creativity and effectiveness, let&apos;s explore how these solutions can elevate your business to new heights.</p>
+                    <p data-aos="fade-right" className="mb-1 text-xl text-white/60">Zedny&apos;s Creative Solutions for Business Empowerment</p>
+                    <p data-aos="fade-right" className="text-white/60">In today&apos;s fast-paced business world, staying competitive and achieving growth are top priorities. Innovative solutions are tailored to meet the unique needs of businesses and corporations. With a focus on creativity and effectiveness, let&apos;s explore how these solutions can elevate your business to new heights.</p>
 
-                    <div className="pt-4">
+                    <div data-aos="zoom-in-down" className="pt-4">
                         <button
                             className="
                                 group relative px-8 py-3 rounded-md
@@ -40,7 +40,7 @@ const Hero = () => {
                         </button>
                     </div>
                 </div>
-                <div className="relative w-full h-75 order-1 lg:order-2">
+                <div data-aos="zoom-in-down" className="relative w-full h-75 order-1 lg:order-2">
                     <Image
                         src={'https://zedny.com/assets/images/miscallenousPages/our-solutions/for-business/cover-image.png'}
                         alt="image hero business page"

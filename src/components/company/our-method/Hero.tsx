@@ -23,11 +23,11 @@ const Hero = () => {
         <main className="section-gap relative z-100">
             <div className="container flex flex-col gap-10">
                 <div className="flex flex-col gap-4">
-                    <p className="mb-1 text-xl text-white">PARTNERSHIP APPROACH</p>
+                    <p data-aos="fade-right" className="mb-1 text-xl text-white">PARTNERSHIP APPROACH</p>
                     <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                         <TextType text={[`One holistic learning solution, with experts to support you.`, `One holistic learning solution, with experts to support you.`]} typingSpeed={100} />
                     </h1>
-                    <p className="mb-1 text-lg text-white/70">Our unique partnership approach guarantees that we will work with you at every step, from the first ideas to future development, scaling your learning solution as your business goals grow and change.</p>
+                    <p data-aos="fade-right" className="mb-1 text-lg text-white/70">Our unique partnership approach guarantees that we will work with you at every step, from the first ideas to future development, scaling your learning solution as your business goals grow and change.</p>
                 </div>
 
                 <div className="flex flex-col gap-3 mt-20">
@@ -35,7 +35,9 @@ const Hero = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
                         {
                             data.map((item, idx) => (
-                                <div key={idx}
+                                <div
+                                    data-aos="fade-up"
+                                    key={idx}
                                     className="group parent-line-animate relative rotate-0 hover:sm:rotate-1 rounded-2xl overflow-hidden p-3 border-b 
                             hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
                             hover:bg-linear-to-br from-pink-500/30 via-purple-500/30 to-cyan-500/30

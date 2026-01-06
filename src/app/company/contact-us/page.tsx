@@ -1,10 +1,14 @@
 import FormContactUs from "@/components/company/contact-us/FormContactUs"
-import Navbar from "@/components/home/Navbar"
+import Navbar from "@/components/home/NavbarClient"
 import Image from "next/image"
 import type { Metadata } from 'next'
 import Footer from "@/components/home/Footer"
+import { getToken } from "@/lib/getToken"
+import { verifyToken } from "@/lib/verifyToken"
 
-const page = () => {
+const page = async () => {
+    const token = await getToken();
+    const dataUser = verifyToken(token);
     return (
         <>
             {/* gradient */}
@@ -18,7 +22,7 @@ const page = () => {
             </div>
 
             {/* Components */}
-            <Navbar />
+            <Navbar dataUser={dataUser} />
             <FormContactUs />
             <Footer />
         </>

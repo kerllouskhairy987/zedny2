@@ -9,9 +9,9 @@ const Hero = () => {
                     <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-6xl font-bold">
                         <TextType text={[`ZEDNY SKILLS Competency Management`, `ZEDNY SKILLS Competency Management`]} typingSpeed={100} />
                     </h1>
-                    <p className="mb-1 text-xl text-white/60">Foster an organizational culture that highly esteems and encourages skill enhancement, inspiring employees to establish and attain their individual skill objectives.</p>
+                    <p data-aos="fade-right" className="mb-1 text-xl text-white/60">Foster an organizational culture that highly esteems and encourages skill enhancement, inspiring employees to establish and attain their individual skill objectives.</p>
                 </div>
-                <div className="relative w-full h-75 order-1 lg:order-2">
+                <div data-aos="zoom-in-down" className="relative w-full h-75 order-1 lg:order-2">
                     <Image
                         src={'https://zedny.com/assets/images/miscallenousPages/products-services/IMAGE.svg'}
                         alt="image hero business page"

@@ -30,10 +30,10 @@ const Hero = () => {
                     <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                         <TextType text={[`Unveiling the AI Mystique:`, `Unveiling the AI Mystique:`]} typingSpeed={100} />
                     </h1>
-                    <p className="mb-1 text-xl text-white/60">How Zedny Harnesses Artificial Intelligence to Transform Learning</p>
-                    <p className="mb-1 text-lg text-white/90">Behind the scenes at Zedny, a silent revolution is taking place, and it&apos;s all thanks to the power of Artificial Intelligence (AI). In the realm of eLearning, AI is the enigmatic force that propels us forward, shaping the future of education in ways that are both awe-inspiring and mysterious.</p>
-                    <h2 className="mb-1 text-lg text-white/90">The AI Behind the Curtain</h2>
-                    <p className="mb-1 text-lg text-white/90">AI isn&apos;t just a buzzword at Zedny; it&apos;s a core element woven into the very fabric of our platform. But what exactly does this entail, and how does AI work its magic?</p>
+                    <p data-aos="fade-right" className="mb-1 text-xl text-white/60">How Zedny Harnesses Artificial Intelligence to Transform Learning</p>
+                    <p data-aos="fade-right" className="mb-1 text-lg text-white/90">Behind the scenes at Zedny, a silent revolution is taking place, and it&apos;s all thanks to the power of Artificial Intelligence (AI). In the realm of eLearning, AI is the enigmatic force that propels us forward, shaping the future of education in ways that are both awe-inspiring and mysterious.</p>
+                    <h2 data-aos="fade-right" className="mb-1 text-lg text-white/90">The AI Behind the Curtain</h2>
+                    <p data-aos="fade-right" className="mb-1 text-lg text-white/90">AI isn&apos;t just a buzzword at Zedny; it&apos;s a core element woven into the very fabric of our platform. But what exactly does this entail, and how does AI work its magic?</p>
                 </div>
 
 
@@ -42,7 +42,7 @@ const Hero = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
                         {
                             data.map((item, idx) => (
-                                <div key={idx}
+                                <div data-aos="fade-up" key={idx}
                                     className="group parent-line-animate relative rotate-0 hover:sm:rotate-1 rounded-2xl overflow-hidden 
                                         p-3 border-b 
                                         hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
@@ -60,8 +60,8 @@ const Hero = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <p className="text-lg text-white/80">At Zedny, AI isn&apos;t just a tool; it&apos;s an enigma that constantly challenges us to push the boundaries of learning. As you embark on your learning adventure, know that AI is your silent companion, working tirelessly to make your journey not only personalized but also extraordinary.</p>
-                    <p className="text-lg text-white/80">So, the next time you delve into a Zedny course or assessment, remember that behind every click and recommendation lies the enigmatic world of AI, shaping your learning experience in ways that are both implicit and intriguing.</p>
+                    <p data-aos="fade-right" className="text-lg text-white/80">At Zedny, AI isn&apos;t just a tool; it&apos;s an enigma that constantly challenges us to push the boundaries of learning. As you embark on your learning adventure, know that AI is your silent companion, working tirelessly to make your journey not only personalized but also extraordinary.</p>
+                    <p data-aos="fade-right" className="text-lg text-white/80">So, the next time you delve into a Zedny course or assessment, remember that behind every click and recommendation lies the enigmatic world of AI, shaping your learning experience in ways that are both implicit and intriguing.</p>
                 </div>
             </div>
 

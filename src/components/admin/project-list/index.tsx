@@ -24,7 +24,7 @@ const ProjectList = ({ projects }: IProps) => {
     return (
         <div className="p-5 rounded-xl overflow-x-auto flex flex-col grow w-full mx-auto overflow-auto">
 
-            <div className="grid grid-cols-2p gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <ProjectChart1 />
                 <ProjectChart2 />
             </div>

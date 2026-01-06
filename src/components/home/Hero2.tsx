@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import TextType from '../reactBits/TypingText';
 
@@ -12,7 +14,7 @@ const Hero2 = () => {
                 <div className="flex items-center gap-3 rtl:space-x-reverse justify-center w-full col-span-3 lg:col-span-3 ">
                     <span className="h-[2] w-8 gradient-line animate-line fromZero-to-full-width" />
 
-                    <span className="font-medium tracking-wider italic text-3xl gradient-text-color">
+                    <span data-aos="zoom-in-down" className="font-medium tracking-wider italic text-3xl gradient-text-color">
                         ZEDNY
                     </span>
 
@@ -21,7 +23,7 @@ const Hero2 = () => {
 
                 <div className="container mx-auto grid grid-cols-2 lg:grid-cols-3 gap-12 items-center z-10">
                     <div className="space-y-6 col-span-2 mx-auto md:mx-0">
-                        <h1 className="text-3xl md:text-4xl font-black text-white tracking-tight leading-tight">
+                        <h1 data-aos="fade-right" className="text-3xl md:text-4xl font-black text-white tracking-tight leading-tight">
                             THE COMPLETE
                         </h1>
 
@@ -39,11 +41,11 @@ const Hero2 = () => {
                         </h2>
 
 
-                        <p className="text-gray-400 text-lg max-w-md leading-relaxed">
+                        <p data-aos="zoom-in-down" className="text-gray-400 text-lg max-w-md leading-relaxed">
                             Experience a world-class, science-backed enablement solution that maximizes your workforce potential through comprehensive learning.
                         </p>
 
-                        <div className="pt-4">
+                        <div data-aos="zoom-in-down" className="pt-4">
                             <button
                                 className="
                                 group relative px-8 py-3 rounded-md
@@ -73,7 +75,7 @@ const Hero2 = () => {
 
                     </div>
 
-                    <div className="md:relative flex justify-center items-center mx-auto col-span-2 lg:col-span-1">
+                    <div data-aos="zoom-in-down" className="md:relative flex justify-center items-center mx-auto col-span-2 lg:col-span-1">
                         <div className="absolute left-1/2 -translate-x-1/2 w-125 h-125 border border-gray-700/50 rounded-full animate-spin-slow"></div>
                         <div className="absolute left-1/2 -translate-x-1/2 w-100 h-100 border border-dashed border-cyan-500/30 rounded-full"></div>
 

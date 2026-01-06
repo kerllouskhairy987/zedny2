@@ -1,10 +1,15 @@
 import Hero from "@/components/company/our-story/Hero"
 import Footer from "@/components/home/Footer"
-import Navbar from "@/components/home/Navbar"
+import Navbar from "@/components/home/NavbarClient"
+import { getToken } from "@/lib/getToken"
+import { verifyToken } from "@/lib/verifyToken"
 import { Metadata } from "next"
 import Image from "next/image"
 
-const page = () => {
+const page = async () => {
+    const token = await getToken();
+    const dataUser = verifyToken(token);
+
     return (
         <>
             {/* pulse animation */}
@@ -21,7 +26,7 @@ const page = () => {
             </div>
 
             {/* Components */}
-            <Navbar />
+            <Navbar dataUser={dataUser} />
             <Hero />
             <Footer />
         </>

@@ -7,9 +7,7 @@ const UpdatePage = async ({ params }: { params: Promise<{ id: string }> }) => {
     const singleProject = await GetSingleProject(Number(id))
     console.log(singleProject)
 
-    return (
-        <UpdateProjectForm singleProject={singleProject} />
-    )
+    return <UpdateProjectForm singleProject={singleProject} />
 }
 
 export default UpdatePage

@@ -65,9 +65,9 @@ const Hero = () => {
                         <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                             <TextType text={[`Discover the Power of Gamified Learning .. only with Zedny`, `Discover the Power of Gamified Learning .. only with Zedny`]} typingSpeed={100} />
                         </h1>
-                        <p className="mb-1 text-xl text-white/60">Unlock the Secrets to Implementing Gamification in Learning and Revolutionize Your Training and Development Programs with Zedny.</p>
+                        <p data-aos="fade-right" className="mb-1 text-xl text-white/60">Unlock the Secrets to Implementing Gamification in Learning and Revolutionize Your Training and Development Programs with Zedny.</p>
                     </div>
-                    <div className="relative w-full h-75 order-1 lg:order-2">
+                    <div data-aos="zoom-in-down" className="relative w-full h-75 order-1 lg:order-2">
                         <Image
                             src={'/gamification.png'}
                             alt="image hero business page"
@@ -80,7 +80,7 @@ const Hero = () => {
                 <div className="flex flex-col gap-3 pt-30">
                     {
                         data.map((item, idx) => (
-                            <div key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291] shadow-xs hover:shadow-lg shadow-[#dd4292b0] duration-300">
+                            <div data-aos="fade-right" key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291] shadow-xs hover:shadow-lg shadow-[#dd4292b0] duration-300">
                                 <span className="line-animate"></span>
                                 <h3 className="text-2xl font-semibold first-char">{item.title}</h3>
                                 <p className="text-xl">{item.desc}</p>

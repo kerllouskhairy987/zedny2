@@ -49,10 +49,10 @@ const Hero = () => {
                     <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                         <TextType text={[`Academic Integrity Policy for Zedny`, `Academic Integrity Policy for Zedny`]} typingSpeed={100} />
                     </h1>
-                    <p className="mb-1 text-xl text-white/60">How Zedny Harnesses Artificial Intelligence to Transform Learning</p>
-                    <p className="mb-1 text-lg text-white/90">Behind the scenes at Zedny, a silent revolution is taking place, and it&apos;s all thanks to the power of Artificial Intelligence (AI). In the realm of eLearning, AI is the enigmatic force that propels us forward, shaping the future of education in ways that are both awe-inspiring and mysterious.</p>
-                    <h2 className="mb-1 text-lg text-white/90">The AI Behind the Curtain</h2>
-                    <p className="mb-1 text-lg text-white/90">AI isn&apos;t just a buzzword at Zedny; it&apos;s a core element woven into the very fabric of our platform. But what exactly does this entail, and how does AI work its magic?</p>
+                    <p data-aos="fade-right" className="mb-1 text-xl text-white/60">How Zedny Harnesses Artificial Intelligence to Transform Learning</p>
+                    <p data-aos="fade-right" className="mb-1 text-lg text-white/90">Behind the scenes at Zedny, a silent revolution is taking place, and it&apos;s all thanks to the power of Artificial Intelligence (AI). In the realm of eLearning, AI is the enigmatic force that propels us forward, shaping the future of education in ways that are both awe-inspiring and mysterious.</p>
+                    <h2 data-aos="fade-right" className="mb-1 text-lg text-white/90">The AI Behind the Curtain</h2>
+                    <p data-aos="fade-right" className="mb-1 text-lg text-white/90">AI isn&apos;t just a buzzword at Zedny; it&apos;s a core element woven into the very fabric of our platform. But what exactly does this entail, and how does AI work its magic?</p>
                 </div>
 
 
@@ -61,7 +61,7 @@ const Hero = () => {
                     <div className="flex flex-col gap-3">
                         {
                             data.map((item, idx) => (
-                                <div key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 duration-300 shadow-lg shadow-pink-500/10 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291]">
+                                <div data-aos="fade-right" key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 duration-300 shadow-lg shadow-pink-500/10 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291]">
                                     <span className="line-animate"></span>
                                     <h3 className="text-2xl font-semibold first-char">{item.title}</h3>
                                     <p className="text-xl">{item.desc}</p>

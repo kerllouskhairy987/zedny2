@@ -1,5 +1,4 @@
 
-import Navbar from "@/components/home/Navbar"
 import Benefits from "@/components/products-services/competency-management/Benefits"
 import Hero from "@/components/products-services/competency-management/Hero"
 import Overview from "@/components/products-services/competency-management/Overview"
@@ -32,6 +31,7 @@ export default Page
 
 import type { Metadata } from 'next'
 import Footer from "@/components/home/Footer"
+import Navbar from "@/components/home/Navbar"
 
 export const metadata: Metadata = {
     title: 'competency management',

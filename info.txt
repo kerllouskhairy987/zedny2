@@ -1,7 +1,18 @@
-logo loop
+✅ logo loop
 
-Circular Gallery
+✅ Circular Gallery
 
-stack
+✅ stack
 
 ✅ Dome Gallery ==> image slider in zedny
+
+✅ -- aos (animation cards)
+
+main animation for image and button {
+    data-aos="zoom-in-down"
+}
+
+
+do -- getwaves.io
+
+✅ -- loading page

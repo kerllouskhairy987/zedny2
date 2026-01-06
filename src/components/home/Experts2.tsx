@@ -71,7 +71,7 @@ const Experts2 = () => {
                 }}
             />
 
-            <div className="text-center flex flex-col gap-2 max-w-125 mx-auto">
+            <div data-aos="fade-right" className="text-center flex flex-col gap-2 max-w-125 mx-auto">
                 <h2 className="text-3xl font-bold">
                     Our <span className="gradient-text-color">Experts</span>
                 </h2>

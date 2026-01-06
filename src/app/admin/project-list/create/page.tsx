@@ -1,11 +1,7 @@
 import CreateProjectForm from "@/components/admin/project-list/create/CreateProjectForm"
 
 const CreateNewProjectForm = () => {
-    return(
-        <div className="p-5">
-            <CreateProjectForm />
-        </div>
-    )
+    return <CreateProjectForm />
 }
 
 export default CreateNewProjectForm

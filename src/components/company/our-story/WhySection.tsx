@@ -99,9 +99,9 @@ const WhySection = () => {
     return (
         <section className="pt-10 md:pt-20 relative">
             <div className="container flex flex-col gap-3">
-                <h2 className='gradient-text-color text-start! text-2xl'>Why Zedny</h2>
-                <p className='text-white/60 text-xl'>Your Gateway to Learning Excellence</p>
-                <p className='text-white/60 text-lg'>In a world where learning and development are at the heart of success, Zedny emerges as the catalyst for transformation. For users, institutions, companies, and every stakeholder seeking a path to excellence, Zedny is the compass that points the way. Here&apos;s why you should choose Zedny as your ultimate hub for training, development, and assessment.</p>
+                <h2 data-aos="fade-right" className='gradient-text-color text-start! text-2xl'>Why Zedny</h2>
+                <p data-aos="fade-right" className='text-white/60 text-xl'>Your Gateway to Learning Excellence</p>
+                <p data-aos="fade-right" className='text-white/60 text-lg'>In a world where learning and development are at the heart of success, Zedny emerges as the catalyst for transformation. For users, institutions, companies, and every stakeholder seeking a path to excellence, Zedny is the compass that points the way. Here&apos;s why you should choose Zedny as your ultimate hub for training, development, and assessment.</p>
             </div>
 
             <div className="py-10 w-full bg-transparent flex items-center relative overflow-hidden text-center">
@@ -117,7 +117,7 @@ const WhySection = () => {
             </div>
 
             <div className="container">
-                <p className="text-white/60 text-sm">Don&apos;t settle for mediocrity; choose excellence. Choose Zedny and embark on a learning journey that&apos;s personalized, engaging, and transformative. Your future starts here.</p>
+                <p data-aos="fade-right" className="text-white/60 text-sm">Don&apos;t settle for mediocrity; choose excellence. Choose Zedny and embark on a learning journey that&apos;s personalized, engaging, and transformative. Your future starts here.</p>
             </div>
 
             <div className="

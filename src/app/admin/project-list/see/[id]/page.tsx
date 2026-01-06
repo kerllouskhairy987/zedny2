@@ -8,7 +8,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const singleProject = await GetSingleProject(Number(id))
   return (
     <>
-      <div className='m-5 flex justify-start'>
+      <div className='flex justify-start'>
         <BackBtn />
       </div>
 

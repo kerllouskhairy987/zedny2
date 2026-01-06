@@ -72,7 +72,7 @@ const Benefits = () => {
 
                 {
                     data.map((item, idx) => (
-                        <div key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291] shadow-xs hover:shadow-lg shadow-[#dd4292b0] duration-300">
+                        <div data-aos="fade-right" key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291] shadow-xs hover:shadow-lg shadow-[#dd4292b0] duration-300">
                             <span className="line-animate"></span>
                             <h3 className="text-2xl font-semibold first-char">{item.title}</h3>
                             <p className="text-xl">{item.topDesc}</p>
@@ -100,7 +100,7 @@ const Benefits = () => {
                     ))
                 }
 
-                <div className="flex flex-col gap-3 mt-5">
+                <div data-aos="zoom-in-down" className="flex flex-col gap-3 mt-5">
                     <p className="text-white/90">TALK TO OUR EXPERTS ABOUT SKILLS</p>
                     <div>
                         <button

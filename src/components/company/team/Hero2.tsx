@@ -167,10 +167,10 @@ const Hero2 = async () => {
                         <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                             <TextType text={[`Our Executive Team`, `Our Executive Team`]} typingSpeed={100} />
                         </h1>
-                        <p className="mb-1 text-xl text-white/60">Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients.</p>
+                        <p data-aos="fade-right" className="mb-1 text-xl text-white/60">Our success is a result of teamwork and building upon our technical expertise and creative style providing a full-service solution to our clients.</p>
                     </div>
 
-                    <div className="relative w-full h-75 order-1 lg:order-2">
+                    <div data-aos="zoom-in-down" className="relative w-full h-75 order-1 lg:order-2">
                         <Image
                             src={'https://zedny.com/assets/images/team.png'}
                             alt="image hero business page"

@@ -11,7 +11,7 @@ const Hero = () => {
                     </h1>
                     <p className="mb-1 text-xl text-white/60">Zedny&apos;s Path to Personal and Professional Growth</p>
                 </div>
-                <div className="relative w-full h-75 order-1 lg:order-2">
+                <div data-aos="zoom-in-down" className="relative w-full h-75 order-1 lg:order-2">
                     <Image
                         src={'https://zedny.com/assets/images/miscallenousPages/our-solutions/for_indivedule/cover-one.svg'}
                         alt="image hero business page"

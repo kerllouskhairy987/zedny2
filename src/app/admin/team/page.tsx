@@ -136,7 +136,7 @@ import Link from "next/link"
 const page = async () => {
     const teamMembers = await GetAllTeamMembers()
     return (
-        <section className="p-5 ">
+        <section className="p-5 ps-10">
             <Link href="/admin/team/create" className="flex justify-end w-fit ms-auto">
                 <div className="pt-4 flex justify pb-10 ">
                     <button
@@ -167,9 +167,9 @@ const page = async () => {
                 </div>
             </Link>
 
-            <div>
-                <div>
-                    <Table className="overflow-x-auto ">
+            <div className="mx-auto">
+                <div className="max-w-full">
+                    <Table className="overflow-x-auto w-full">
                         <TableCaption>A list of all projects</TableCaption>
                         <TableHeader className="overflow-auto">
                             <TableRow>

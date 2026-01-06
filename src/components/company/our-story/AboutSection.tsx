@@ -50,12 +50,14 @@ const data3 = [
 const AboutSection = () => {
     return (
         <section className="container pt-10 md:pt-20 relative">
-            <p className="mb-6 text-white/70">Zedny&apos;s Journey to Transform Learning In the heart of innovation, where learning meets empowerment, Zedny emerged as a beacon of transformation in April 2018. Founded by a dynamic group of dedicated professionals, our vision was clear: to reshape the learning landscape for the region&apos;s human capital.</p>
+            <p data-aos="fade-right" className="mb-6 text-white/70">Zedny&apos;s Journey to Transform Learning In the heart of innovation, where learning meets empowerment, Zedny emerged as a beacon of transformation in April 2018. Founded by a dynamic group of dedicated professionals, our vision was clear: to reshape the learning landscape for the region&apos;s human capital.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {
                     data1.map((item, idx) => (
-                        <div key={idx}
+                        <div
+                            data-aos="fade-up"
+                            key={idx}
                             className="group parent-line-animate relative rounded-2xl overflow-hidden p-3 border-b border-r border-[#dd429291]
                             hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
                             hover:bg-linear-to-br from-pink-500/30 via-purple-500/30 to-cyan-500/30
@@ -71,12 +73,14 @@ const AboutSection = () => {
 
             <div className="py-10 flex flex-col gap-5">
                 <h3 className="text-2xl gradient-text-color text-start!">A Glimpse into Zedny&apos;s World</h3>
-                <p>At Zedny, we&apos;ve transformed dreams into reality, and our offerings reflect our commitment to excellence:</p>
+                <p data-aos="fade-right">At Zedny, we&apos;ve transformed dreams into reality, and our offerings reflect our commitment to excellence:</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
                         data2.map((item, idx) => (
-                            <div key={idx}
+                            <div
+                                data-aos="fade-up"
+                                key={idx}
                                 className="group parent-line-animate relative rounded-2xl overflow-hidden p-3 border-b border-r border-[#dd429291]
                             hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
                             hover:bg-linear-to-br from-pink-500/30 via-purple-500/30 to-cyan-500/30
@@ -93,12 +97,14 @@ const AboutSection = () => {
 
             <div className="py-10 flex flex-col gap-5">
                 <h3 className="text-2xl gradient-text-color text-start!">The Zedny Revolution: What&apos;s New?</h3>
-                <p>But that&apos;s not the end of our story. Zedny has evolved, and with that evolution comes a new era of learning:</p>
+                <p data-aos="fade-right">But that&apos;s not the end of our story. Zedny has evolved, and with that evolution comes a new era of learning:</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
                         data3.map((item, idx) => (
-                            <div key={idx}
+                            <div
+                                data-aos="fade-up"
+                                key={idx}
                                 className="group parent-line-animate relative rounded-2xl overflow-hidden p-3 border-b border-r border-[#dd429291]
                             hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
                             hover:bg-linear-to-br from-pink-500/30 via-purple-500/30 to-cyan-500/30
@@ -114,9 +120,9 @@ const AboutSection = () => {
             </div>
 
             <div className="flex flex-col gap-3">
-                <h4 className="text-white text-2xl font-bold">Join the Zedny Revolution</h4>
-                <p className="text-lg text-white/70">As we continue to redefine the boundaries of education, we invite you to be part of the Zedny revolution. Whether you&apos;re an individual seeking knowledge, an HR professional looking to transform your organization, or a lifelong learner hungry for more, Zedny is your partner in unlocking your true potential.</p>
-                <p className=" text-white/70">Join us as we embark on this extraordinary journey. With Zedny, learning knows no bounds, and empowerment has no limits. Your transformation begins here.</p>
+                <h4 data-aos="fade-right" className="text-white text-2xl font-bold">Join the Zedny Revolution</h4>
+                <p data-aos="fade-right" className="text-lg text-white/70">As we continue to redefine the boundaries of education, we invite you to be part of the Zedny revolution. Whether you&apos;re an individual seeking knowledge, an HR professional looking to transform your organization, or a lifelong learner hungry for more, Zedny is your partner in unlocking your true potential.</p>
+                <p data-aos="fade-right" className=" text-white/70">Join us as we embark on this extraordinary journey. With Zedny, learning knows no bounds, and empowerment has no limits. Your transformation begins here.</p>
             </div>
 
             <div className="

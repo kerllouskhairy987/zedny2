@@ -69,7 +69,7 @@ const Benefits = () => {
                 />
             </div>
 
-            <div className="mx-auto px-3 text-center my-10 flex flex-col gap-4 max-w-150">
+            <div data-aos="zoom-in-down" className="mx-auto px-3 text-center my-10 flex flex-col gap-4 max-w-150">
                 <h4 className="text-xl font-semibold">READY TO TAKE THE NEXT STEP?</h4>
                 <p className="text-white/60 text-xl">Book a discovery call with us to delve into your requirements. Together, we can uncover how our comprehensive learning solution and steadfast partnership will enhance your workforce and organization.</p>
             </div>

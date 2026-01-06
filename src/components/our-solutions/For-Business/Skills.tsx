@@ -43,13 +43,15 @@ const Skills = () => {
     return (
         <section className="section-gap container relative">
             <div className="flex flex-col gap-4">
-                <h2 className="font-bold text-xl sm:text-3xl">Elevate Your <span className="gradient-text-color">Skills</span>, Expand Your Horizons, and Conquer Tomorrow. All with Zedny.</h2>
-                <p className="text-white/60 text-lg">Zedny is the go-to partner, trusted by both seasoned CIOs and newcomers to the L&D world. Our team of experts crafts customized solutions that precisely match your current needs and future aspirations. We stand out as the sole partner capable of enhancing your teams and product development simultaneously.</p>
+                <h2 data-aos="fade-right" className="font-bold text-xl sm:text-3xl">Elevate Your <span className="gradient-text-color">Skills</span>, Expand Your Horizons, and Conquer Tomorrow. All with Zedny.</h2>
+                <p data-aos="fade-right" className="text-white/60 text-lg">Zedny is the go-to partner, trusted by both seasoned CIOs and newcomers to the L&D world. Our team of experts crafts customized solutions that precisely match your current needs and future aspirations. We stand out as the sole partner capable of enhancing your teams and product development simultaneously.</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-10">
                     {
                         dataFeatures.map((item, idx) => (
-                            <div key={idx}
+                            <div
+                                data-aos="fade-up"
+                                key={idx}
                                 className="group parent-line-animate relative rotate-0 hover:sm:rotate-1 rounded-2xl overflow-hidden 
                                         p-3 border-b 
                                         hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
@@ -76,7 +78,7 @@ const Skills = () => {
                     }
                 </div>
 
-                <div className="mt-14 mx-auto">
+                <div data-aos="zoom-in-down" className="mt-14 mx-auto">
                     <button
                         className="
                                 group relative px-8 py-3 rounded-full

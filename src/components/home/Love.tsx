@@ -1,9 +1,11 @@
+"use client";
+
 import { VerticalInfiniteSliderToBottom, VerticalInfiniteSliderToTop } from "./slider/experts/Slider"
 
 const Love = () => {
     return (
         <section className="section-gap relative">
-            <div className="container text-center flex flex-col gap-2">
+            <div data-aos="fade-right" className="container text-center flex flex-col gap-2">
                 <h2 className="font-bold text-3xl">Wall Of <span className="gradient-text-color">Love</span></h2>
                 <p className="text-white/70">What other people are saying about Zedny</p>
             </div>

@@ -4,7 +4,7 @@ import { GetAllProjects } from "@/server/admin/project-list/get/action"
 const page = async () => {
     const projects = await GetAllProjects()
     return (
-        <div>
+        <div className="p-5 ps-10">
             <ProjectList projects={projects} />
         </div>
     )

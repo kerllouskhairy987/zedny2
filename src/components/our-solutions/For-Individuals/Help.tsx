@@ -43,13 +43,15 @@ const Help = () => {
     return (
         <section className="section-gap container relative">
             <div className="flex flex-col gap-4">
-                <h2 className="font-bold text-xl sm:text-3xl">HOW WE <span className="gradient-text-color">HELP</span></h2>
-                <p className="text-white/60 text-lg">Individuals seeking to boost their careers or acquire new skills need not look further than Zedny. With a delightful blend of creativity and professionalism, Zedny&apos;s solutions make learning an exciting journey. Here&apos;s how Zedny can transform your personal and professional life, one step at a time.</p>
+                <h2 data-aos="fade-right" className="font-bold text-xl sm:text-3xl">HOW WE <span className="gradient-text-color">HELP</span></h2>
+                <p data-aos="fade-right" className="text-white/60 text-lg">Individuals seeking to boost their careers or acquire new skills need not look further than Zedny. With a delightful blend of creativity and professionalism, Zedny&apos;s solutions make learning an exciting journey. Here&apos;s how Zedny can transform your personal and professional life, one step at a time.</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-10">
                     {
                         dataFeatures.map((item, idx) => (
-                            <div key={idx}
+                            <div
+                                data-aos="fade-up"
+                                key={idx}
                                 className="group parent-line-animate relative rotate-0 hover:sm:rotate-1 rounded-2xl overflow-hidden 
                                         p-3 border-b 
                                         hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
@@ -76,7 +78,7 @@ const Help = () => {
                     }
                 </div>
 
-                <p className="text-white/90 text-xl mt-10">
+                <p data-aos="fade-right" className="text-white/90 text-xl mt-10">
                     Learning is more enjoyable when you&apos;re part of a like-minded group. In conclusion, Zedny offers a vibrant and engaging platform for both businesses and individuals to thrive in their respective domains. Whether you&apos;re an organization seeking to empower your workforce or an individual eager to achieve personal and professional growth, Zedny&apos;s creative and effective solutions are your gateway to success. Embrace the future of learning with Zedny and unlock your full potential.
                 </p>
             </div>

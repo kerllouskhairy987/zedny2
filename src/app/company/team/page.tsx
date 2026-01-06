@@ -4,7 +4,8 @@ import Navbar from "@/components/home/Navbar"
 import { Metadata } from "next"
 import Image from "next/image"
 
-const page = () => {
+const page = async () => {
+
     return (
         <>
             {/* pulse animation */}

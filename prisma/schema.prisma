@@ -8,10 +8,10 @@ datasource db {
 }
 
 model PowerFeatures {
-  id       Int    @id @default(autoincrement())
-  imageUrl String
-  title    String
-  desc     String
+  id        Int      @id @default(autoincrement())
+  imageUrl  String
+  title     String
+  desc      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -21,6 +21,26 @@ model Team {
   src       String
   name      String
   position  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String
+  email     String   @unique
+  password  String
+  isAdmin   Boolean  @default(false)
+  pan       Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Complaints {
+  id        Int      @id @default(autoincrement())
+  username  String
+  email     String
+  message   String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }

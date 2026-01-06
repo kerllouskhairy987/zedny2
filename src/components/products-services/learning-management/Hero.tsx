@@ -39,10 +39,10 @@ const Hero = () => {
                         <h1 className="gradient-text-color text-start! text-4xl flex flex-col gap-2 md:text-5xl font-bold">
                             <TextType text={[`Elevating Learning Management`, `Elevating Learning Management`]} typingSpeed={100} />
                         </h1>
-                        <p className="mb-1 text-xl text-white/60">How Zedny&apos;s LMS, LRS, and LXP Revolutionize Your Experience</p>
-                        <p className="mb-1 text-lg text-white/90">In today&apos;s ever-evolving landscape of education and professional development, an effective Learning Management System (LMS) is pivotal. However, Zedny goes above and beyond the traditional LMS by integrating Learning Record Store (LRS) and Learning Experience Platform (LXP) functionalities, creating a comprehensive ecosystem that enriches the learning experience.</p>
+                        <p data-aos="fade-right" className="mb-1 text-xl text-white/60">How Zedny&apos;s LMS, LRS, and LXP Revolutionize Your Experience</p>
+                        <p data-aos="fade-right" className="mb-1 text-lg text-white/90">In today&apos;s ever-evolving landscape of education and professional development, an effective Learning Management System (LMS) is pivotal. However, Zedny goes above and beyond the traditional LMS by integrating Learning Record Store (LRS) and Learning Experience Platform (LXP) functionalities, creating a comprehensive ecosystem that enriches the learning experience.</p>
                     </div>
-                    <div className="relative w-full h-75 order-1 lg:order-2">
+                    <div data-aos="zoom-in-down" className="relative w-full h-75 order-1 lg:order-2">
                         <Image
                             src={'https://zedny.com/assets/images/miscallenousPages/products-services/IMAGE.svg'}
                             alt="image hero business page"
@@ -56,7 +56,7 @@ const Hero = () => {
                     <h2 className="text-2xl font-bold pb-4">Zedny: A Multi-Faceted Learning Solution</h2>
                     {
                         data.map((item, idx) => (
-                            <div key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291] shadow-xs hover:shadow-lg shadow-[#dd4292b0] duration-300">
+                            <div data-aos="fade-right" key={idx} className="relative parent-line-animate overflow-hidden border-b p-4 rounded-md flex flex-col gap-3 hover:-translate-y-2 bg-[#1b1b1ba1] hover:border-r-[0.01px] border-[#dd429291] shadow-xs hover:shadow-lg shadow-[#dd4292b0] duration-300">
                                 <span className="line-animate"></span>
                                 <h3 className="text-2xl font-semibold first-char">{item.title}</h3>
                                 <p className="text-xl">{item.desc}</p>
@@ -84,7 +84,7 @@ const Hero = () => {
                     }
                 </div>
 
-                <p className="font-semibold text-lg text-white/80">Zedny provides a centralized and efficient way to manage and measure learning, helping to improve training outcomes and stay compliant with industry regulations. Our LRS is uniquely built and managed in-house by our data experts, ensuring you have everything you need for learning analytics without adding any extra systems.</p>
+                <p data-aos="fade-right" className="font-semibold text-lg text-white/80">Zedny provides a centralized and efficient way to manage and measure learning, helping to improve training outcomes and stay compliant with industry regulations. Our LRS is uniquely built and managed in-house by our data experts, ensuring you have everything you need for learning analytics without adding any extra systems.</p>
             </div>
 
 

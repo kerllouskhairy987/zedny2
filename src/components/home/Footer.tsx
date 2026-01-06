@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image"
 import Link from "next/link";
 
@@ -36,11 +38,11 @@ const Footer = () => {
             <div className="text-center mt-9 flex flex-col gap-4">
                 <h4 className="text-lg">Copyright © 2025 Zedny Educational Services S.A.E - All Rights Reserved</h4>
                 <div className="flex flex-wrap items-center justify-center gap-3 ">
-                    <Link href={"#"}>Terms Of Service</Link>
+                    <Link href={"/our-policies/intellectual-property-copyright"}>Terms Of Service</Link>
                     <span className="h-8 w-px bg-white/70"></span>
-                    <Link href={"#"}>Privacy Policy</Link>
+                    <Link href={"/our-policies/academic-integrity-policy"}>Privacy Policy</Link>
                     <span className="h-8 w-px bg-white/70"></span>
-                    <Link href={"#"}>Cookie Policy</Link>
+                    <Link href={"/our-policies/attendance-policyfor-virtual-learning"}>Cookie Policy</Link>
                 </div>
             </div>
         </footer>

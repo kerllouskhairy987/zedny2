@@ -68,7 +68,9 @@ const MissionSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {
                     data1.map((item, idx) => (
-                        <div key={idx}
+                        <div 
+                            data-aos="fade-up"
+                        key={idx}
                             className="group parent-line-animate relative rounded-2xl overflow-hidden p-3 border-b border-r border-[#dd429291]
                             hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
                             hover:bg-linear-to-br from-pink-500/30 via-purple-500/30 to-cyan-500/30
@@ -84,12 +86,14 @@ const MissionSection = () => {
 
             <div className="py-10 flex flex-col gap-5">
                 <h3 className="text-2xl gradient-text-color text-start!">our values</h3>
-                <p>I LEARN</p>
+                <p data-aos="fade-right">I LEARN</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
                         data2.map((item, idx) => (
-                            <div key={idx}
+                            <div 
+                                data-aos="fade-up"
+                            key={idx}
                                 className="group parent-line-animate relative rounded-2xl overflow-hidden p-3 border-b border-r border-[#dd429291]
                             hover:border-b-transparent hover:scale-105 hover:shadow-lg hover:shadow-[#dd4292b0] transition-all duration-300
                             hover:bg-linear-to-br from-pink-500/30 via-purple-500/30 to-cyan-500/30

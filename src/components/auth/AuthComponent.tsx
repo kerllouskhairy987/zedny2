@@ -17,7 +17,7 @@ const AuthComponent = () => {
         <main className="container min-h-[calc(100vh-80px)] overflow-hidden my-10 flex flex-col relative">
             <div className="relative grow h-full w-full grid grid-cols-1 md:grid-cols-2 gap-5 bg-linear-to-br from-pink-500/10 via-purple-500/10 to-cyan-500/10 rounded-2xl px-5 shadow-lg shadow-[#dd4292b0]">
                 <LoginForm isLogin={isLogin} />
-                <RegisterForm isLogin={isLogin} />
+                <RegisterForm isLogin={isLogin} setIsLogin={setIsLogin} />
 
                 <div className={`
                     absolute w-full h-64 py-5 right-0 bg-linear-to-br rounded-md from-pink-500/50 via-purple-500/50 to-cyan-500/50 z-10 rounded-br-[50px] rounded-bl-[50px] 
