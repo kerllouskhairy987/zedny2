@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { PowerFeatures } from "../../../../generated/prisma/client"
 import { Eye, Pen } from "lucide-react"
 import BtnDelete from "./delete/BtnDelete"
 import {
@@ -14,6 +13,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import { ProjectChart1, ProjectChart2 } from "../Charts"
+import { PowerFeatures } from "@prisma/client"
 
 type IProps = {
     projects: PowerFeatures[]

@@ -10,8 +10,8 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { PowerFeatures, Team, User } from "../../../generated/prisma/client"
 import Image from "next/image"
+import { PowerFeatures, Team, User } from "@prisma/client"
 
 const data1 = [
     {

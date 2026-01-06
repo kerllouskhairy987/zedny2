@@ -1,13 +1,13 @@
 "use client";
 
 import Spinner from "@/components/ui/Spinner"
-import { User } from "../../../../../generated/prisma/client"
 import { useActionState, useEffect, useState } from "react";
 import { UpdateUserActionFromAdmin } from "@/server/admin/users/update/action";
 import { UpdateUserState } from "@/server/auth/action";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import BackBtn from "@/components/ui/BackBtn";
+import { User } from "@prisma/client";
 
 interface IProps {
     dataUser: User;

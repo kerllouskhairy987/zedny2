@@ -1,7 +1,6 @@
 "use client";
 
 import Spinner from "@/components/ui/Spinner";
-import { Team } from "../../../../../generated/prisma/client"
 import { useActionState, useEffect, useState } from "react";
 import { UpdateTeamMemberAction } from "@/server/admin/team/update/action";
 import BackBtn from "@/components/ui/BackBtn";
@@ -9,6 +8,7 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { CreateTeamMemberState } from "@/server/admin/team/create/action";
 import Image from "next/image";
+import { Team } from "@prisma/client";
 
 interface IProps {
     member: Team;

@@ -1,7 +1,6 @@
 "use client";
 
 import { useActionState, useEffect, useState } from 'react'
-import { PowerFeatures } from '../../../../../generated/prisma/client'
 import Image from 'next/image';
 import { UpdateProjectAction } from '@/server/admin/project-list/update/action';
 import { CreateActionState } from '@/server/admin/project-list/create/action';
@@ -9,6 +8,7 @@ import Spinner from '@/components/ui/Spinner';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import BackBtn from '@/components/ui/BackBtn';
+import { PowerFeatures } from '@prisma/client';
 
 interface IProps {
     singleProject: PowerFeatures;
